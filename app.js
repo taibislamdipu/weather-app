@@ -30,6 +30,7 @@ function getWeatherReport(city) {
         }).then(showWeatherReport);
 }
 
+
 // Show weather Report
 function showWeatherReport(weather) {
     console.log(weather);
