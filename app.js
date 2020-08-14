@@ -51,7 +51,7 @@ function showWeatherReport(weather) {
     let todayDate = new Date();
     date.innerText = dateManage(todayDate);
 
-    if (weatherType.textContent == 'clear') {
+    if (weatherType.textContent == 'Clear') {
         document.body.style.backgroundImage = "url('images/sunny.jpg')";
     }
     else if (weatherType.textContent == 'Clouds') {
@@ -60,7 +60,7 @@ function showWeatherReport(weather) {
     else if (weatherType.textContent == 'Drizzle') {
         document.body.style.backgroundImage = "url('images/snowy.jpg')";
     }
-    else if (weatherType.textContent == 'Hazy') {
+    else if (weatherType.textContent == 'Haze') {
         document.body.style.backgroundImage = "url('images/hazy.jpg')";
     }
     else if (weatherType.textContent == 'Rain') {
@@ -88,4 +88,17 @@ function dateManage(dateArg) {
     return `${date} ${month} (${day}, ${year})`
 
 }
+
+// Todays Date
+function todayDates() {
+    let date = new Date();
+    return date;
+}
+
+let todayDate = document.getElementById('date').innerText;
+todayDate = todayDates();
+document.getElementById('date').innerText = todayDate;
+
+
+
 

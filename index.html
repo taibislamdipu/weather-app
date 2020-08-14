@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
+    <link rel="shortcut icon" href="images/apple-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -12,25 +13,27 @@
 
 <body>
 
-    <div class="app-main container">
-        <div class="searchInputBox">
+    <main class="app-main container">
+        <section class="searchInputBox">
             <input type="text" id="input-box" class="input-box" placeholder="Enter city name..." autocomplete="off">
-        </div>
+        </section>
 
-        <div class="weather-body">
+        <section class="weather-body">
             <div class="location-details">
-                <div class="city" id="city">Germany, DE</div>
+                <div class="city" id="city" style="font-size: 25px;">Bangladesh, Dhaka</div>
                 <div class="date" id="date">Date</div>
             </div>
 
             <div class="weather-status">
-                <div class="temp" id="temp">34&deg;C</div>
-                <div class="min-max" id="min-max">32&deg;C (min) / 34&deg;C (max)</div>
+                <div class="temp" id="temp">00&deg;C</div>
+                <div class="min-max" id="min-max">0&deg;C (min) / 0&deg;C (max)</div>
                 <div class="weather" id="weather">clear</div>
                 <div class="img"></div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
+
 
 
     <script src="app.js"></script>
